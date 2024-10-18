@@ -19,3 +19,8 @@ model User {
   name  String
   age   Int
 }
+
+model Courses {
+  id  String  @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+}
